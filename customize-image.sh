@@ -1,0 +1,1 @@
+cp /tmp/overlay/network/interfaces /etc/network
