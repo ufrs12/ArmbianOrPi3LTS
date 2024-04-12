@@ -33,10 +33,12 @@
                         sudo dpkg -i /usr/share/RapidSCADA/rapidscada_6.2.1-1_all.deb
                         #Создаем директорию журналов
                         sudo mkdir /var/log/scada
+                        #Создаем самоподписанный сертификат
+                        sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt
                         #Добавляем строчку в файл (не работает!!! надо делать вручную)
                         sudo sh -c "echo 'tmpfs           /var/log/scada  tmpfs   defaults,noatime,size=100m    0    0' >> /etc/fstab"
 
-
-                         #git clone https://github.com/thiagoralves/OpenPLC_v3.git /home/OpenPLC
-                        #cd /home/OpenPLC/
-                        #./install.sh linux
+                        #Ставим OpenPLC Runtime
+                        git clone https://github.com/thiagoralves/OpenPLC_v3.git /home/olia/OpenPLC
+                        cd /home/olia/OpenPLC/
+                        ./install.sh linux
