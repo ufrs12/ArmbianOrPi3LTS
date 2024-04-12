@@ -11,7 +11,8 @@
                         sudo usermod -a -G sudo olia
 
                         #Качаем ASP.NET Core Runtime 8.0
-                        wget https://download.visualstudio.microsoft.com/download/pr/1e449990-2934-47ee-97fb-b78f0e587c>                        #Создаем папку
+                        wget https://download.visualstudio.microsoft.com/download/pr/1e449990-2934-47ee-97fb-b78f0e587c>
+                        #Создаем папку
                         sudo mkdir /usr/share/dotnet
                         #Разархивируем в /usr/share/dotnet/
                         sudo tar -xf dotnet-sdk-8.0.204-linux-arm64.tar.gz -C /usr/share/dotnet
