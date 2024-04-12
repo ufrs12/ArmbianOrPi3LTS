@@ -4,7 +4,7 @@ auto lo
 iface lo inet loopback
 
 
-auto eth0
+auto end0
 iface eth0 inet static
 address 192.168.1.2
 gateway 192.168.1.1
