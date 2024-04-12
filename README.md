@@ -1,6 +1,14 @@
 # ArmbianOrPi3LTS
 Userpatches for Orange Pi 3 LTS  
 
+`git clone --depth=1 https://github.com/ufrs12/ArmbianOrPi3LTS -b Zabbix`
+`sh ./ArmbianOrPi3LTS/script.sh`
+
+
+
+
+
+
 `git clone --depth=1 https://github.com/ufrs12/ArmbianOrPi3LTS`  
 
 `cp ./ArmbianOrPi3LTS/overlay/network/interfaces ./build/userpatches/overlay/network/interfaces`
